@@ -1,0 +1,21 @@
+from array import*
+
+full_string = input("input string: ")
+full_string = full_string.lower()
+
+arr = array("i")
+fin_string = ""
+num_of_types = 0
+for x in full_string:
+    a = -1
+    a = fin_string.find(x)
+    if(a == -1):
+        fin_string += x
+        arr.insert(num_of_types, 1)
+        num_of_types += 1
+    else:
+        arr.insert(a, arr[a] + 1)
+        arr.pop(a + 1)
+
+for i in range(num_of_types):
+    print("symbol: ", fin_string[i], "  amount: ", arr[i])

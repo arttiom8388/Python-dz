@@ -1,0 +1,19 @@
+import random
+
+while 1:
+    r_num = random.randint(1, 100)
+    num = input("print number from 1 to 100 to try to guess or word <stop> to stop: ")
+    if num == "stop":
+        print("random number is ", r_num)
+        break
+    while r_num != int(num):
+        if(r_num > int(num)):
+            print("random number is bigger")
+        else:
+            print("random number is smaller")
+        num = input("print number from 1 to 100 to try to guess or word <stop> to stop: ")
+    print("you win, congratulations")
+    print()
+    print("starting new game")
+    print()
+

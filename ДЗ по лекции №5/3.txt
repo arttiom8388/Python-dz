@@ -1,0 +1,5 @@
+num = int(input("input num: "))
+
+i = 0
+for i in range(num):
+    print("num: ", i, "   square:", i ** 2)

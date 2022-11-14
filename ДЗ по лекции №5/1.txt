@@ -1,0 +1,6 @@
+age = int(input("input your age: "))
+
+if(age >= 18):
+    print("hello, you are welcome")
+else:
+    print("sorry, but although there is nothing here, it's still 18+")
