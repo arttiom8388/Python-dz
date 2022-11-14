@@ -1,0 +1,20 @@
+full_string = input("input string: ")
+sym = input("input symbol: ")
+num = int(input("input number: "))
+
+new_string = full_string[0 :: 2]
+i = int(0)
+for i in range(num):
+    new_string += sym
+    i += 1
+
+new_string += full_string[1 :: 2]
+
+i = 0
+exclamation_string = ""
+for i in range(num):
+    exclamation_string += '!'
+    i += 1
+
+print(full_string, "       ", new_string)
+print(exclamation_string)

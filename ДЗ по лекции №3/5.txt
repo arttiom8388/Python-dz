@@ -1,0 +1,8 @@
+str_1 = input("Введите строку: ")
+str_2 = input("Введите строку: ")
+
+str_1 = str_1[1 : len(str_1) - 1 :]
+str_2 = str_2[1 : len(str_2) - 1 :]
+str_2 = str_2[:: -1]
+
+print(str_1 + str_2)

@@ -1,0 +1,15 @@
+full_string = input("Введите предложение: ")
+part_string = input("Введите предложение: ")
+char_num = -1
+count = 0
+
+while 1:
+    char_num = full_string.find(part_string, char_num+1)
+    if char_num == -1:
+        break
+    count += 1
+
+if (count == 2 or count == 3 or count == 4):
+    print(part_string, "встречается", count, "раза")
+else:
+    print(part_string, "встречается", count, "раз")

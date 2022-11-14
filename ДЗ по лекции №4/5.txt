@@ -1,0 +1,10 @@
+of_birth = input("date of birt in format dd/mm/yyyy: ")
+date = input("current date in format dd/mm/yyyy: ")
+
+d_of_b, m_of_b, y_of_b = date_of_birth.split('/')
+d, m, y = date.split('/')
+delta_days = 365 * (int(y) - int(y_of_b)) + 30 * (int(m) - int(m_of_b)) + (int(d) - int(d_of_b))
+full_years = delta_days // 365
+full_days = delta_days % 365
+
+print("you have been lived ", full_years, " years and ", full_days , " days")

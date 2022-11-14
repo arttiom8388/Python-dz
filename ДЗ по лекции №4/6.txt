@@ -1,0 +1,13 @@
+full_string = input("input string: ")
+full_tuple = tuple(full_string.lower().split(' '))
+n = 1
+rez_string = ""
+
+for x in full_tuple:
+    if(n == 1 or n == len(full_tuple)):
+        rez_string += (x.capitalize() + " ")
+    else:
+        rez_string += (x + " ")
+    n += 1
+
+print(rez_string)

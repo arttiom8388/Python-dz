@@ -1,0 +1,62 @@
+word_1 = input("Введите словo: ")
+word_2 = input("Введите словo: ")
+word_3 = input("Введите словo: ")
+
+string_1 = ""
+for x in word_1:
+    a = -1
+    b = -1
+    c = -1
+    a = word_2.find(x)
+    b = word_3.find(x)
+    c = string_1.find(x)
+    if(a > -1 and b > -1 and c == -1):
+       string_1 += (x + ", ")
+
+string_1 = string_1[0:len(string_1)-2:1]
+
+long_word = word_1 + word_2 + word_3
+string_2 = ""
+for x in long_word:
+    a = -1
+    a = string_2.find(x)
+    if(a == -1):
+       string_2 += (x + ", ")
+
+string_2 = string_2[0:len(string_2)-2:1]
+
+string_3 = ""
+for x in word_1:
+    a = -1
+    b = -1
+    c = -1
+    a = word_2.find(x)
+    b = word_3.find(x)
+    c = string_3.find(x)
+    if(a == -1 and b == -1 and c == -1):
+       string_3 += (x + ", ")
+
+for x in word_2:
+    a = -1
+    b = -1
+    c = -1
+    a = word_1.find(x)
+    b = word_3.find(x)
+    c = string_3.find(x)
+    if(a == -1 and b == -1 and c == -1):
+       string_3 += (x + ", ")
+
+for x in word_3:
+    a = -1
+    b = -1
+    a = word_2.find(x)
+    b = word_1.find(x)
+    c = string_3.find(x)
+    if(a == -1 and b == -1 and c == -1):
+       string_3 += (x + ", ")
+
+string_3 = string_3[0:len(string_3)-2:1]
+
+print("1) ", string_1)
+print("2) ", string_2)
+print("3) ", string_3)

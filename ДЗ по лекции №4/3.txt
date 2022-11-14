@@ -1,0 +1,13 @@
+full_string = input("Введите последовательность слов, разделенных запятыми: ")
+full_tuple = tuple(full_string.split(','))
+rez_string = ""
+
+for x in full_tuple:
+    a = -1
+    a = rez_string.find(x)
+    if(a == -1):
+       rez_string += (x + ", ")
+
+rez_string = rez_string[0:len(rez_string)-2:1]
+
+print(rez_string)

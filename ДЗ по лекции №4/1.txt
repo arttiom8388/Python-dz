@@ -1,0 +1,7 @@
+num = input("Введите число: ")
+sum = 0
+
+for x in num:
+    sum += int(x)
+
+print("Сумма чисел = ", sum)

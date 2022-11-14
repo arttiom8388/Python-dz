@@ -1,0 +1,6 @@
+weight = float(input("Введите вес в килограммах: "))
+high = float(input("Введите рост в метрах: "))
+
+bvi = weight / (heigh ** 2)
+
+print("ИМТ = ", bvi)
